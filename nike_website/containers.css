@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+html{
+	background-color: darkgray;
+}
+
+.bigbox a span{
+	position:absolute; 
+  	width:100%;
+  	height:100%;
+  	top:0;
+ 	 left: 0;
+
+  	z-index: 1;
+}
+
+.container{
+	width: 100vw;
+	height: 100vh;
+	font-family: arial;
+	display: grid;
+
+	grid-template-columns: repeat(3, 1fr);  /* fr is fraction of the space so 1/3*/
+	grid-template-rows: 50px 1fr 1fr 100px;
+
+	gap: 10px;
+
+	padding: 10px;
+	box-sizing: border-box;
+	transition: all .2s ease-in-out;
+}
+
+.container div{
+	padding: 10px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.img1{
+	line-height: 20px;
+	width: 20%;
+	height: 30px;
+	float: right;
+	object-fit: contain;
+}
+
+.header{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	background-image: url(footer.jpeg);
+}
+
+.bigbox{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 4;
+	background-image: url(nikeAdd.jpeg);
+	background-size: cover;
+	transition: all .2s ease-in-out;
+	
+}
+
+.bigbox:hover{
+	transform: scale(1.01);
+}
+
+.box1{
+	background-image: url(retro.jpeg);
+	background-size: cover;
+	background-position: -20px -40px;
+	font-style: italic;
+	transition: all .2s ease-in-out;
+}
+
+.box1:hover{
+	transform: scale(1.02);
+}
+
+.box1 p{
+	color: black;
+	font-size: 55px;
+	font-weight: 900;
+}
+
+.box2{
+	background-image: url(hyp.jpeg);
+	background-size: cover;
+	font-style: italic;
+	transition: all .2s ease-in-out;
+}
+
+.box2:hover{
+	transform: scale(1.02);
+}
+
+.box2 p{
+	color: black;
+	font-size: 55px;
+	font-style: italic;
+}
+
+.footer{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	background-color: white;
+	line-height: 80px;
+	background-image: url(footer.jpeg);
+}
+
+.footer p{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+.menu{
+
+}
+
+.menu li{
+	list-style: none;
+	display: inline-block;
+	float: left;
+	line-height: 30px;
+	transition: all .2s ease-in-out;
+
+}
+
+.menu li:hover{
+	transform: scale(1.1);
+}
+
+.menu li a{
+	text-decoration: none;
+	padding: 20px;
+	font-size: 20px;
+	color: white;
+
+}
